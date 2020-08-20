@@ -114,13 +114,13 @@ public class Lutador {
 	}
 
 	//--------------------------------------
-	private String getCategoria() {
+	String getCategoria() {
 		return categoria;
 	}
 
 	public void setCategoria() {
 		if(this.peso < 52.2) {
-			this.categoria = "INVALIDO";
+			this.categoria = "PESO NAO SE ENCAIXA EM NENHUMA CATEGORIA";
 		}else if(this.peso < 70.3) {
 			this.categoria = "LEVE";
 		}else if(this.peso < 83.9) {
@@ -128,7 +128,7 @@ public class Lutador {
 		}else if(this.peso < 120.2) {
 			this.categoria = "PESADO";
 		}else {
-			this.categoria = "INVALIDO";
+			this.categoria = "PESO NÃO SE ENCAIXA EM NENHUMA CATEGORIA";
 		}
 		
 	}

@@ -20,11 +20,15 @@ public class Programa {
 	
 	
 	
+		Luta UEC01 = new Luta();
+		
+		UEC01.marcarLuta(l[3], l[0]);
+		UEC01.lutar();
 		
 		
 		
 		
-		
+		l[3].status();
 	
 	}
 
